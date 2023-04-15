@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5rem);
+  z-index: 10;
+}
+.footerNotes {
+  font-size: 0.75rem;
+  font-weight: lighter;
+  font-family: 'Century Gothic';
+  color: #ffffff;
+}
+
+/* 
+  Media query for mobile devices 
+*/
+
+@media screen and (max-width: 768px) {
+  .footerNotes {
+    font-size: 0.6rem;
+  }
+}

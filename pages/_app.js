@@ -1,11 +1,11 @@
 import '@/styles/globals.css'
-import MainNavigation from '@/pages/layouts/MainNavigation'
-import Footer from '@/pages/layouts/Footer'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <MainNavigation />
+      <Navigation />
       <Component {...pageProps} />
       <Footer/>
     </>
