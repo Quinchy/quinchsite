@@ -1,7 +1,11 @@
 .navContainer {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(5rem);
+  z-index: 1000;
 }
 .navigation {
   display: flex;
@@ -9,12 +13,20 @@
   justify-content: space-between;
   position: relative;
   padding: 0.75rem 25rem;
-  z-index: 10;
+  z-index: 1000;
 }
 .logo {
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.quinchLogo {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover > .quinchLogo {
+  filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.734));
+  rotate: -20deg;
 }
 .nameLogo {
   font-size: 1rem;
@@ -23,12 +35,15 @@
   color: #ffffff;
   margin: 0rem 0.50rem;
 }
-.lightToggleButton {
-  background: white;
-  padding: 1rem;
-  border-radius: .25rem;
-  border: none;
+.github {
+  filter: invert(1);
   cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.github:hover {
+  filter: invert(1) drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.734));
+  scale: 1.05;
 }
 
 /* 
@@ -38,7 +53,7 @@
 @media screen and (max-width: 768px) {
   .navigation {
     flex-wrap: wrap;
-    padding: 0.75rem .50rem;
+    padding: 0.75rem 1rem;
   }
   .nameLogo {
     font-size: 1rem;
