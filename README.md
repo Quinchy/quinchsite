@@ -1,5 +1,6 @@
 ### Quinch Personal Website
 
-> Built in Next.js
-&nbsp;
-> Deploy in Vercel
+<p>
+  > Built in Next.js
+  > Deploy in Vercel
+</p>
