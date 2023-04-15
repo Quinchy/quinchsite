@@ -14,7 +14,7 @@ export default function Home() {
         <section className='placeholder-section'>
           <div className='wait'>
             <Image src="/QuinchY.gif" width={200} height={200}/>
-            <h1>. . .</h1>
+            <h1><span className="dot dot-1">.</span> <span className="dot dot-2">.</span> <span className="dot dot-3">.</span></h1>
           </div>
         </section>
       </main>
