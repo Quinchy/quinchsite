@@ -2,9 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Century Gothic';
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
@@ -29,6 +27,8 @@ a {
 
 .nav-wrapper {
   position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5rem);
 }
 
 .navigation {
@@ -37,10 +37,10 @@ a {
   position: relative;
   z-index: 10;
   justify-content: space-between;
-  padding-left: 30rem;
-  padding-right: 30rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 25rem;
+  padding-right: 25em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navigation.lg {
@@ -50,7 +50,7 @@ a {
   padding-left: 8rem;
   padding-right: 8rem;
 }
-
+  
 .logo {
   cursor: pointer;
   display: flex;
@@ -58,10 +58,19 @@ a {
 }
 
 .name-logo {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  font-family: 'Bebas Neue', cursive;
+  font-size: 1rem;
+  font-family: 'Century Gothic';
+  letter-spacing: -0.5px;
   color: #ffffff;
+  margin: 0 1rem 0 1rem;
+}
+
+.light-toggle-button {
+  background: white;
+  padding: 1rem;
+  border-radius: .25rem;
+  border: none;
+  cursor: pointer;
 }
 
 .wait {
@@ -72,26 +81,19 @@ a {
   flex-direction: column;
 }
 
-.light-toggle-button {
-  background: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 15%;
-  border: none;
-  cursor: pointer;
-}
-
 .footer {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5rem);
   z-index: 10;
 }
 
 .footer-note {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: lighter;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Century Gothic';
   color: #ffffff;
 }

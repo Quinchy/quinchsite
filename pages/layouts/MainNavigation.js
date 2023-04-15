@@ -5,11 +5,9 @@ const MainNavigation = () => {
 	return (
 		<div className='nav-wrapper'>
 			<nav className='navigation'>
-				<div className='logo'>
-					<Link href="/">
-						<Image src="/QuinchLogo.svg" width={45} height={45}/>
-					</Link>
-					<Link href="/">
+				<div>
+					<Link className='logo' href="/">
+						<Image src="/QuinchLogo.png" width={25} height={25}/>
 						<h2 className='name-logo'>Cyril James De Guzman</h2>
 					</Link>
 				</div>
