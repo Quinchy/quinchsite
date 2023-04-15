@@ -47,14 +47,6 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
-.navigation.lg {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
   
 .logo {
   cursor: pointer;
@@ -106,23 +98,18 @@ a {
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .navigation {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     flex-wrap: wrap;
   }
 
-  .navigation.lg {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .name-logo {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0 0.5rem 0 0.5rem;
   }
 
   .light-toggle-button {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .footer-note {
