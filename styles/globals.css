@@ -26,6 +26,39 @@ a {
   Main section
 */
 
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 27rem;
+}
+.introduction-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0rem;
+}
+.hello {
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+}
+.job {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.quinch-pixel-profile {
+  margin: 0rem 0rem 0rem 2rem;
+}
 .placeholder-section {
   min-height: 100vh;
   margin-top: 10rem;
@@ -66,5 +99,27 @@ a {
 */
 
 @media screen and (max-width: 768px) {
-
+  .main {
+    margin: 2rem 1rem; /* Adjust margin for mobile devices */
+  }
+  .introduction-section {
+    flex-direction: column; /* Change the flex direction to column */
+    text-align: center; /* Center the text */
+    margin: 4rem 0rem; /* Adjust margin for mobile devices */
+  }
+  .hello {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .job {
+    font-size: 1.25rem;
+  }
+  .quinch-pixel-profile {
+    order: -1; /* Set the order to display the image before the introduction */
+    margin: 0rem 0rem 2rem 0rem; /* Adjust margin to separate the image from the text */
+    width: 100%; /* Make the image container take full width */
+    max-width: 350px; /* Set a maximum width for the image container */
+  }
 }

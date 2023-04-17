@@ -7,10 +7,10 @@ const Navigation = () => {
 		<div className={styles.navContainer}>
 			<nav className={styles.navigation}>
 				<div>
-				<Link className={styles.logo} href="/">
-					<Image className={styles.quinchLogo} src="/QuinchLogo.svg" width={30} height={30} alt="Cyril James De Guzman Logo" />
-					<h2 className={styles.nameLogo}>Cyril James De Guzman</h2>
-				</Link>
+					<Link className={styles.logo} href="/">
+						<Image className={styles.quinchLogo} src="/QuinchLogo.svg" width={30} height={30} alt="Cyril James De Guzman Logo" />
+						<h2 className={styles.nameLogo}>Cyril James De Guzman</h2>
+					</Link>
 				</div>
 				<div>
 					<Link className={styles.logo} href="https://github.com/Quinchy" target="_blank">
